@@ -15,7 +15,7 @@ class Input {
 public:
     Input();
     void addCommand(int pin, String commandName);
-    void checkcommands();
+    void checkCommands();
 
 private:
     void digitalCheck(int pin);

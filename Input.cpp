@@ -16,7 +16,7 @@ void Input::addCommand(int pin, String commandName) {
     }
 }
 
-void Input::checkcommands() {
+void Input::checkCommands() {
     for(int pin = 0; pin < NUM_DIGITAL_PINS; pin++) {
         if(enable[pin]) {
             //Detect if pin is an analog input

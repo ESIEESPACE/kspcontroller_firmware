@@ -1,11 +1,11 @@
 
 #include "Input.h"
-
 Input input;
 
 
 void setup() {
     Serial.begin(9600);
+
     //Commands declaration
     input.addCommand(7, "STG");
     input.addCommand(6, "SAS");
@@ -19,6 +19,6 @@ void setup() {
 
 
 void loop() {
-    input.checkcommands();
+    input.checkCommands();
     delay(10);
 }
