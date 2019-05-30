@@ -36,7 +36,7 @@ void CommandReader::process() {
                 data += buffer[i];
             }
             //Separate command et params
-            StringSplitter splitter(data, ';', 5);
+            StringSplitter splitter(data, ';', 3);
             int count = splitter.getItemCount();
 
             String command = splitter.getItemAtIndex(0);

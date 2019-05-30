@@ -9,6 +9,8 @@
 #include <Arduino.h>
 #include "StringSplitter.h"
 
+#define MAX_OUTPUT 20
+
 struct CommandReaderStruct {
     const char* command;
     void (*callback)(int, String*);
@@ -26,9 +28,7 @@ private:
     char buffer[50];
     int pointer = 0;
     Stream *stream;
-    CommandReaderStruct commands[20];
+    CommandReaderStruct commands[MAX_OUTPUT];
     int commandCounter = 0;
 };
-
-
 #endif //KSPCONTROLLER_FIRMWARE_COMMANDREADER_H

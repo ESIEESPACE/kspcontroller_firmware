@@ -60,6 +60,6 @@ int StringSplitter::getItemCount(){
 String StringSplitter::getItemAtIndex(int index){
 	if((index >= 0) && (index < count))
 		return op[index];
-  else
+    else
 		return "";
 }

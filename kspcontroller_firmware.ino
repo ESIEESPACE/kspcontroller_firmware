@@ -1,11 +1,14 @@
 
 #include "Input.h"
 #include "CommandReader.cpp"
+#include "MemoryFree.h"
 Input input(&Serial);
 CommandReader reader(&Serial);
 
+
 void setup() {
     Serial.begin(9600);
+
 
     //Commands declaration
     input.addInput(7, "STG");
@@ -24,10 +27,16 @@ void setup() {
 void loop() {
     input.process();
     reader.process();
-    delay(10);
+
+    Serial.println(String(freeMemory()));
 }
 
 void test(int count, String* params){
-    Serial.println("Callback");
+    Serial.println(F("Callback"));
+
 }
 
+void showMemoryFree() {
+    Serial.print(F("Free ram = "));
+    Serial.println(freeMemory(), DEC);
+}

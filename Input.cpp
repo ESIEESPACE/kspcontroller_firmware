@@ -15,7 +15,7 @@ void Input::addInput(int pin, String commandName) {
 
 void Input::removeInput(int pin) {
     enable[pin] = false;
-    command[pin] = NULL;
+    command[pin] = "";
     pinMode(pin, OUTPUT);
 }
 
