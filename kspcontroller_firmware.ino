@@ -10,7 +10,8 @@ void setup() {
     input.addCommand(7, "STG");
     input.addCommand(6, "SAS");
     input.addCommand(5, "RCS");
-    input.addCommand(4, "ABT");
+    input.addCommand(4, "DRC");
+    input.addCommand(3, "VUE");
 
     input.addCommand(A0, "THT");
     input.addCommand(A1, "ROL");
@@ -21,4 +22,3 @@ void loop() {
     input.checkcommands();
     delay(10);
 }
-

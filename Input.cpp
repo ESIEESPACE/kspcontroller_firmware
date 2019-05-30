@@ -40,11 +40,11 @@ void Input::analogCheck(int pin){
 
     //Less than 30, it is considered as 0
     if(value < 30) value = 0;
-
+    
     //threshold detection
     if(!(last_value[pin] - ANALOG_THRESHOLD < value && value < last_value[pin] + ANALOG_THRESHOLD)) {
         Serial.print(command[pin] + ";");
-        Serial.print((double)value/(double)1023, 7);
+        Serial.print((double)value/(double)1023, 2);
         Serial.print("\n");
         last_value[pin] = value;
     }
