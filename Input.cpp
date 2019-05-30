@@ -19,7 +19,7 @@ void Input::removeInput(int pin) {
     pinMode(pin, OUTPUT);
 }
 
-void Input::checkCommands() {
+void Input::process() {
     for(int pin = 0; pin < NUM_DIGITAL_PINS; pin++) {
         if(enable[pin]) {
             //Detect if pin is an analog input

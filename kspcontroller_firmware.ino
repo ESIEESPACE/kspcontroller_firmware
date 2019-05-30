@@ -16,12 +16,13 @@ void setup() {
 
     input.addInput(A0, "THT");
     input.addInput(A1, "ROL");
+
     reader.addOutput("WTF", test);
 }
 
 
 void loop() {
-    input.checkCommands();
+    input.process();
     reader.process();
     delay(10);
 }
