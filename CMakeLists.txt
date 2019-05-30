@@ -12,10 +12,11 @@ project(${PROJECT_NAME})
 set(${PROJECT_NAME}_HDRS User_Setup.h)
 
 ### Additional static libraries to include in the target.
-# set(${PROJECT_NAME}_LIBS)
+set(${PROJECT_NAME}_LIBS)
 
 ### Main sketch file
 set(${PROJECT_NAME}_SKETCH kspcontroller_firmware.ino)
+
 
 ### Add project directories into the build
 # add_subdirectory()
