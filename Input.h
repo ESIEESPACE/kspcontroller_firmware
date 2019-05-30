@@ -13,8 +13,8 @@
 class Input {
 
 public:
-    Input();
-    void addCommand(int pin, String commandName);
+    Input(Stream *_stream);
+    void addInput(int pin, String commandName);
     void checkCommands();
 
 private:
@@ -24,8 +24,8 @@ private:
     int last_value[NUM_DIGITAL_PINS];
     bool enable[NUM_DIGITAL_PINS];
     String command[NUM_DIGITAL_PINS];
-    const int ANALOG_THRESHOLD = 10;
-
+    const int ANALOG_THRESHOLD = 102;
+    Stream *stream;
 };
 
 
