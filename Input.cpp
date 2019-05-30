@@ -13,6 +13,12 @@ void Input::addInput(int pin, String commandName) {
     command[pin] = commandName;
 }
 
+void Input::removeInput(int pin) {
+    enable[pin] = false;
+    command[pin] = NULL;
+    pinMode(pin, OUTPUT);
+}
+
 void Input::checkCommands() {
     for(int pin = 0; pin < NUM_DIGITAL_PINS; pin++) {
         if(enable[pin]) {

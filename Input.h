@@ -15,6 +15,7 @@ class Input {
 public:
     Input(Stream *_stream);
     void addInput(int pin, String commandName);
+    void removeInput(int pin);
     void checkCommands();
 
 private:
