@@ -31,7 +31,7 @@ set(${PROJECT_NAME}_SKETCH kspcontroller_firmware.ino)
 
 #### Additional settings for programmer. From programmers.txt
 set(${PROJECT_NAME}_PROGRAMMER avrisp)
-# set(${PROJECT_NAME}_PORT /dev/cu.usbserial-00000000)
+set(${PROJECT_NAME}_PORT /dev/ttyACM0)
 # set(mega.upload.speed 9600)
 
 ## Verbose build process
