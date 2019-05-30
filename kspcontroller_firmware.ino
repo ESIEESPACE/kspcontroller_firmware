@@ -1,7 +1,8 @@
 
 #include "Input.h"
+#include "CommandReader.cpp"
 Input input(&Serial);
-
+CommandReader reader(&Serial);
 
 void setup() {
     Serial.begin(9600);
@@ -14,11 +15,17 @@ void setup() {
 
     input.addInput(A0, "THT");
     input.addInput(A1, "ROL");
+    reader.addOutput("WTF", test);
 }
 
 
 void loop() {
     input.checkCommands();
+    reader.process();
     delay(10);
+}
+
+void test(int count, String* params){
+    Serial.println("Callback");
 }
 
