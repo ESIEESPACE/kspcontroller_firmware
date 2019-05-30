@@ -11,9 +11,6 @@ Input::Input(Stream *_stream){
 void Input::addInput(int pin, String commandName) {
     enable[pin] = true;
     command[pin] = commandName;
-    if(pin < A0) {
-        pinMode(pin, INPUT_PULLUP);
-    }
 }
 
 void Input::checkCommands() {
@@ -27,6 +24,8 @@ void Input::checkCommands() {
 }
 
 void Input::digitalCheck(int pin){
+    pinMode(pin, INPUT_PULLUP);
+    asm volatile ("NOP");
     int value = digitalRead(pin);
 
     //State change detection
