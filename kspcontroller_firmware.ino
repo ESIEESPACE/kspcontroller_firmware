@@ -11,7 +11,8 @@ void setup() {
     input.addInput(7, "STG");
     input.addInput(6, "SAS");
     input.addInput(5, "RCS");
-    input.addInput(4, "ABT");
+    input.addInput(4, "DRC");
+    input.addInput(3, "VUE");
 
     input.addInput(A0, "THT");
     input.addInput(A1, "ROL");

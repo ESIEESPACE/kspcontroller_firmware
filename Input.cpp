@@ -49,7 +49,7 @@ void Input::analogCheck(int pin){
     //threshold detection
     if(!(last_value[pin] - ANALOG_THRESHOLD < value && value < last_value[pin] + ANALOG_THRESHOLD)) {
         this->stream->print(command[pin] + ";");
-        this->stream->print((double)value/(double)1023, 7);
+        this->stream->print((double)value/(double)1023, 2);
         this->stream->print("\n");
         last_value[pin] = value;
     }

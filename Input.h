@@ -25,7 +25,7 @@ private:
     int last_value[NUM_DIGITAL_PINS];
     bool enable[NUM_DIGITAL_PINS];
     String command[NUM_DIGITAL_PINS];
-    const int ANALOG_THRESHOLD = 102;
+    const int ANALOG_THRESHOLD = 10;
     Stream *stream;
 };
 
