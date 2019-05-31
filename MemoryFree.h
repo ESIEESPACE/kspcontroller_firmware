@@ -5,14 +5,12 @@
 #ifndef	MEMORY_FREE_H
 #define MEMORY_FREE_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+class MemoryFree{
+public:
+    static unsigned int freeMemory();
 
-int freeMemory();
-
-#ifdef  __cplusplus
-}
-#endif
+private:
+    static int freeListSize();
+};
 
 #endif

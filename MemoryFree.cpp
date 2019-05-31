@@ -23,7 +23,7 @@ extern struct __freelist *__flp;
 #include "MemoryFree.h"
 
 /* Calculates the size of the free list */
-int freeListSize()
+int MemoryFree::freeListSize()
 {
     struct __freelist* current;
     int total = 0;
@@ -36,17 +36,17 @@ int freeListSize()
     return total;
 }
 
-int freeMemory()
+unsigned int MemoryFree::freeMemory()
 {
-    int free_memory;
+    unsigned int free_memory;
     if ((int)__brkval == 0)
     {
-        free_memory = ((int)&free_memory) - ((int)&__heap_start);
+        free_memory = ((unsigned int)&free_memory) - ((int)&__heap_start);
     }
     else
     {
-        free_memory = ((int)&free_memory) - ((int)__brkval);
-        free_memory += freeListSize();
+        free_memory = ((unsigned int)&free_memory) - ((int)__brkval);
+        free_memory += MemoryFree::freeListSize();
     }
     return free_memory;
 }
