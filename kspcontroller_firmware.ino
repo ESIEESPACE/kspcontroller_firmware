@@ -20,23 +20,26 @@ void setup() {
     input.addInput(A0, "THT");
     input.addInput(A1, "ROL");
 
-    reader.addOutput("WTF", test);
+    reader.addOutput("MEM", memory);
+    reader.addOutput("TEST", test);
 }
 
 
 void loop() {
     input.process();
     reader.process();
+}
 
-    Serial.println(String(freeMemory()));
+void memory(int count, String* params){
+    Serial.print(F("MEM;"));
+    Serial.println(MemoryFree::freeMemory(), DEC);
 }
 
 void test(int count, String* params){
     Serial.println(F("Callback"));
-
 }
 
-void showMemoryFree() {
+static void showMemoryFree() {
     Serial.print(F("Free ram = "));
-    Serial.println(freeMemory(), DEC);
+    Serial.println(MemoryFree::freeMemory(), DEC);
 }

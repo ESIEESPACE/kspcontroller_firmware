@@ -4,7 +4,6 @@
 
 #include "CommandReader.h"
 
-
 CommandReader::CommandReader(Stream *_stream) {
     this->stream = _stream;
 }
@@ -12,6 +11,7 @@ CommandReader::CommandReader(Stream *_stream) {
 void CommandReader::addOutput(CommandReaderStruct commandReaderStruct) {
     commandCounter++;
     commands[commandCounter] = commandReaderStruct;
+    //stream->println(String(commandCounter, DEC));
 }
 
 void CommandReader::addOutput(const char *command, void (*callback)(int, String*)) {
@@ -26,35 +26,41 @@ void CommandReader::addOutput(String command, void (*callback)(int, String*)) {
 }
 
 void CommandReader::process() {
-    while (stream->available())
+    while (stream->available()>0)
     {
         char letter = stream->read();
         if(letter == '\n') {
             //get command from buffer
-            String data;
-            for (int i = 0; i < pointer; ++i) {
-                data += buffer[i];
-            }
-            //Separate command et params
-            StringSplitter splitter(data, ';', 3);
-            int count = splitter.getItemCount();
-
-            String command = splitter.getItemAtIndex(0);
-            String params[count-1];
-            for (int j = 1; j < count; ++j) {
-                params[j] = splitter.getItemAtIndex(j);
+            int sep = 0;
+            for (int i = 0; i < buffer.length(); ++i) {
+                if(buffer.charAt(i) == ';') sep++;
             }
 
-            for (int k = 0; k < commandCounter; ++k) {
+            String params[sep];
+            String command = (sep == 0 ? buffer : buffer.substring(0, buffer.indexOf(';')));
+
+            buffer.replace(command, "");
+            String paramBuffer;
+            int sepCount = 0;
+            for (int i = 1; i < buffer.length() + 1; ++i) {
+                if(buffer.charAt(i) == ';' || i == buffer.length()) {
+                    params[sepCount] = paramBuffer;
+                    sepCount++;
+                    paramBuffer = "";
+                }
+                else paramBuffer += buffer.charAt(i);
+            }
+            buffer = "";
+            for (int k = 0; k < MAX_OUTPUT; ++k) {
                 //If command correspond then callback
-                if(strcmp(commands[k].command, command.c_str()) ){
-                    commands[k].callback(count-1, params);
+                if(String(commands[k].command) == command){
+                    commands[k].callback(sep, params);
+                    return;
                 }
             }
         }
         else {
-            buffer[pointer] = letter;
-            pointer++;
+            buffer += letter;
         }
     }
 }

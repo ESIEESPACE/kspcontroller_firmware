@@ -7,13 +7,14 @@
 
 #include <WString.h>
 #include <Arduino.h>
-#include "StringSplitter.h"
+#include "MemoryFree.h"
 
-#define MAX_OUTPUT 20
+#define MAX_OUTPUT 10
 
 struct CommandReaderStruct {
     const char* command;
     void (*callback)(int, String*);
+
 };
 
 class CommandReader {
@@ -25,8 +26,7 @@ public:
     void process();
 
 private:
-    char buffer[50];
-    int pointer = 0;
+    String buffer;
     Stream *stream;
     CommandReaderStruct commands[MAX_OUTPUT];
     int commandCounter = 0;
