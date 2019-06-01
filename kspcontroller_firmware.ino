@@ -21,6 +21,7 @@ void setup() {
     input.addInput(A1, "ROL");
 
     reader.addOutput("MEM", memory);
+    reader.addOutput("FRC", force);
     reader.addOutput("TEST", test);
 }
 
@@ -33,6 +34,10 @@ void loop() {
 void memory(int count, String* params){
     Serial.print(F("MEM;"));
     Serial.println(MemoryFree::freeMemory(), DEC);
+}
+
+void force(int count, String* params){
+    input.process(true);
 }
 
 void test(int count, String* params){

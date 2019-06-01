@@ -16,11 +16,12 @@ public:
     Input(Stream *_stream);
     void addInput(int pin, const char* commandName);
     void removeInput(int pin);
+    void process(bool force);
     void process();
 
 private:
-    void digitalCheck(int pin);
-    void analogCheck(int pin);
+    void digitalCheck(int pin, bool force);
+    void analogCheck(int pin, bool force);
 
     int last_value[NUM_DIGITAL_PINS];
     const char* command[NUM_DIGITAL_PINS];
