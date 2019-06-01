@@ -37,6 +37,9 @@ void memory(int count, String* params){
 
 void test(int count, String* params){
     Serial.println(F("Callback"));
+    for (int i = 0; i < count; ++i) {
+        Serial.println(String(i) + ": " + params[i]);
+    }
 }
 
 static void showMemoryFree() {
