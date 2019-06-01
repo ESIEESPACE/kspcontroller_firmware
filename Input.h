@@ -14,7 +14,7 @@ class Input {
 
 public:
     Input(Stream *_stream);
-    void addInput(int pin, String commandName);
+    void addInput(int pin, const char* commandName);
     void removeInput(int pin);
     void process();
 
@@ -23,8 +23,7 @@ private:
     void analogCheck(int pin);
 
     int last_value[NUM_DIGITAL_PINS];
-    bool enable[NUM_DIGITAL_PINS];
-    String command[NUM_DIGITAL_PINS];
+    const char* command[NUM_DIGITAL_PINS];
     const int ANALOG_THRESHOLD = 40;
     Stream *stream;
 };
