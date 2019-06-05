@@ -1,8 +1,3 @@
 #!/bin/bash
-
-rm -rf build
-mkdir build
-cd build
-cmake ..
-make -j 2
-make upload
+rm .build -rf
+ino build

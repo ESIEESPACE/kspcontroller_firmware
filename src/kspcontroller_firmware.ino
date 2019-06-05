@@ -2,6 +2,7 @@
 #include "Input.h"
 #include "CommandReader.cpp"
 #include "MemoryFree.h"
+
 Input input(&Serial);
 CommandReader reader(&Serial);
 
@@ -29,6 +30,8 @@ void setup() {
 void loop() {
     input.process();
     reader.process();
+
+    delay(2000);
 }
 
 void memory(int count, String* params){

@@ -19,11 +19,11 @@ struct CommandReaderStruct {
 
 class CommandReader {
 public:
-    CommandReader(Stream *_stream);
-    void addOutput(const char* command, void (*callback)(int, String*));
-    void addOutput(String command, void (*callback)(int, String*));
-    void addOutput(CommandReaderStruct commandReaderStruct);
-    void process();
+    inline CommandReader(Stream *_stream);
+    inline void addOutput(const char* command, void (*callback)(int, String*));
+    inline void addOutput(String command, void (*callback)(int, String*));
+    inline void addOutput(CommandReaderStruct commandReaderStruct);
+    inline void process();
 
 private:
     String buffer;
@@ -31,4 +31,5 @@ private:
     CommandReaderStruct commands[MAX_OUTPUT];
     int commandCounter = 0;
 };
+
 #endif //KSPCONTROLLER_FIRMWARE_COMMANDREADER_H
