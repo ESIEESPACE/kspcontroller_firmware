@@ -68,3 +68,5 @@ cmake-build-debug
 
 build
 .build
+
+ino.ini
