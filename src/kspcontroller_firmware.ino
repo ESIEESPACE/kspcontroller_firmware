@@ -2,9 +2,12 @@
 #include "Input.h"
 #include "CommandReader.cpp"
 #include "MemoryFree.h"
+#include "U8glib/U8glib.h"
 
 Input input(&Serial);
 CommandReader reader(&Serial);
+
+U8GLIB_ST7920_128X64_4X u8g(10);
 
 
 void setup() {
@@ -31,7 +34,13 @@ void loop() {
     input.process();
     reader.process();
 
+    u8g.firstPage();
+    do {
+        u8g.setFont(u8g_font_unifont);
+        u8g.drawStr( 0, 15, "Interfacing");
+    } while( u8g.nextPage() );
     delay(2000);
+    clearLCD();
 }
 
 void memory(int count, String* params){
@@ -53,4 +62,10 @@ void test(int count, String* params){
 static void showMemoryFree() {
     Serial.print(F("Free ram = "));
     Serial.println(MemoryFree::freeMemory(), DEC);
+}
+
+void clearLCD(){
+    u8g.firstPage();
+    do {
+    } while( u8g.nextPage() );
 }
