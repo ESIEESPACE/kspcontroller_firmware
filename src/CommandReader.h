@@ -32,4 +32,5 @@ private:
     int commandCounter = 0;
 };
 
+
 #endif //KSPCONTROLLER_FIRMWARE_COMMANDREADER_H

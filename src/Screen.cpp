@@ -20,8 +20,19 @@ Screen::Screen(uint8_t cs, Screen_Widget sw[]) : u8g(cs) {
     do {
         u8g.setFont(u8g_font_unifont);
         //u8g.setFont(u8g_font_osb21);
-        u8g.drawStr(0, 22, "KSP");
-        u8g.drawStr(0, 42, "Controller");
+        u8g.drawStr(0, 10, "KSP");
+        u8g.drawStr(0, 21, "Controller");
+        u8g.setFont(u8g_font_5x8);
+        u8g.drawStr(0, 30, "A. BESSIERE");
+        u8g.drawStr(0, 40, "W. DELEVACQ");
+        u8g.drawStr(0, 50, "L. DESPLANCHE");
+        u8g.drawStr(0, 60, "J. LEFEVRE");
+        u8g.drawStr(70, 30, "T. VERITE");
+
+        u8g.drawXBM(68, 31, 60, 33, esieespace_low_bits);
+
+        u8g.setFont(u8g_font_5x8);
+
     } while (u8g.nextPage());
 }
 

@@ -45,6 +45,8 @@ void setup() {
     reader.addOutput("PER", periapsis);
     //Target distance
     reader.addOutput("TDIS", target_distance);
+
+    delay(1000);
 }
 
 
