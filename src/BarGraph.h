@@ -21,6 +21,7 @@ public:
     void writeDisplay();
     void clear();
     void setBrightness(uint8_t b);
+    void setLevel(uint8_t b, uint8_t color);
 
 private:
     uint16_t displaybuffer[8];

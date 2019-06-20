@@ -3,6 +3,7 @@
 #include "CommandReader.cpp"
 #include "MemoryFree.h"
 #include "Screen.h"
+#include "BarGraph.h"
 
 Screen_Widget sw[] = {
         Screen_Widget("APOAPSIS", "60 000 000", "km"),
@@ -14,6 +15,13 @@ Screen_Widget sw[] = {
 Input input(&Serial);
 CommandReader reader(&Serial);
 Screen screen(10, sw);
+
+BarGraph barGraph[] = {
+        BarGraph(0x70),
+        BarGraph(0x72),
+        BarGraph(0x74),
+        BarGraph(0x77),
+};
 
 void setup() {
     Serial.begin(9600);
@@ -82,6 +90,7 @@ void apoapsis(int count, String* params){
     sw[0].data = params[0];
 }
 
+
 void periapsis(int count, String* params){
     if(count != 1) return;
     sw[1].data = params[0];
@@ -90,6 +99,11 @@ void periapsis(int count, String* params){
 void target_distance(int count, String* params){
     if(count != 1) return;
     sw[3].data = params[0];
+}
+
+void bargraph(int count, String* params){
+    if(count != 2) return;
+    barGraph[params[0].toInt()].setLevel(params[1].toInt(), 1);
 }
 
 

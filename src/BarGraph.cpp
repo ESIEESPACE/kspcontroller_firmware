@@ -72,3 +72,9 @@ void BarGraph::setBrightness(uint8_t b) {
     Wire.write(0xE0 | b);
     Wire.endTransmission();
 }
+
+void BarGraph::setLevel(uint8_t b, uint8_t color){
+    for(int i = 0; i<24; i++){
+        setBar(i, i < b ? color : 0);
+    }
+}
