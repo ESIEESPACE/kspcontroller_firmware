@@ -8,8 +8,10 @@ Input::Input(Stream *_stream){
     this->stream = _stream;
 }
 
-void Input::addInput(int pin, const char* commandName) {
+void Input::addInput(int pin, const char* commandName, int min, int max) {
     command[pin] = commandName;
+    this->min[pin] = min;
+    this->max[pin] = max;
 }
 
 void Input::removeInput(int pin) {
@@ -50,8 +52,11 @@ void Input::analogCheck(int pin, bool force){
 
     //threshold detection
     if(!(last_value[pin] - ANALOG_THRESHOLD < value && value < last_value[pin] + ANALOG_THRESHOLD) || force) {
+        this->stream->println(max[pin] - min[pin]);
+        double trans_val = ((double)(value * (max[pin] - min[pin])) / (double)1023) + (double)min[pin];
+
         this->stream->print(String(command[pin]) + ";");
-        this->stream->print((double)value/(double)1023, 2);
+        this->stream->print(trans_val, 2);
         this->stream->print("\n");
         last_value[pin] = value;
     }

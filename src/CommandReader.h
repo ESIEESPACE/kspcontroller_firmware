@@ -9,7 +9,7 @@
 #include <Arduino.h>
 #include "MemoryFree.h"
 
-#define MAX_OUTPUT 10
+#define MAX_OUTPUT 40
 
 struct CommandReaderStruct {
     const char* command;
