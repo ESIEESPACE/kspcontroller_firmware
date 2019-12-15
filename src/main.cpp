@@ -1,10 +1,5 @@
 
-#include "Input.h"
-#include "CommandReader.cpp"
-#include "MemoryFree.h"
-#include "Screen.h"
-#include "BarGraph.h"
-#include "Wire.h"
+#include "main.h"
 
 Screen_Widget sw[] = {
         Screen_Widget("APOAPSIS", "60 000 000", "km"),
@@ -109,7 +104,7 @@ void loop() {
     encoder_check();
 }
 
-void memory(int count, String* params){
+void memory(int count, String* params) {
     Serial.print(F("MEM;"));
     Serial.println(MemoryFree::freeMemory(), DEC);
 }

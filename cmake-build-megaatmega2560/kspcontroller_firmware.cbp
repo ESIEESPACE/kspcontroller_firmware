@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="kspcontroller_firmware"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/louis/kspcontroller_firmware/include"/>
+					<Add directory="/home/louis/kspcontroller_firmware/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/variants/mega"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
+					<Add directory="/home/louis/.platformio/packages/tool-unity"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/louis/kspcontroller_firmware/include"/>
+					<Add directory="/home/louis/kspcontroller_firmware/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/variants/mega"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="/home/louis/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include"/>
+					<Add directory="/home/louis/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed"/>
+					<Add directory="/home/louis/.platformio/packages/tool-unity"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOADFS">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_PROGRAM">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD_DEBUG">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_DEBUG"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD_VERBOSE">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD_VERBOSE"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPDATE_ALL">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_MONITOR">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_MONITOR"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOAD">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_CLEAN">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_DEVICE_LIST">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_DEVICE_LIST"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_TEST">
+				<Option working_dir="/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/louis/kspcontroller_firmware/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/louis/kspcontroller_firmware/include/main.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/MAX7219/BarGraph.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/MAX7219/BarGraph.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/U8glib.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/U8glib.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/chessengine.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_bitmap.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_circle.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_clip.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_api.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_api_16gr.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_attiny85_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_common.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_fast_parallel.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_hw_usart_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_no_en_parallel.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_parallel.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_port_d_wr.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_ssd_i2c.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_st7920_custom.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_st7920_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_st7920_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_std_sw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_sw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_t6963.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_arduino_uc_i2c.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atmega_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atmega_parallel.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atmega_st7920_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atmega_st7920_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atmega_sw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atxmega_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_atxmega_st7920_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_i2c.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_io.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_linux_ssd_i2c.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_msp430_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_null.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_psoc5_ssd_hw_parallel.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_raspberrypi_hw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_raspberrypi_ssd_i2c.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_com_std_sw_spi.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_cursor.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_delay.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_a2_micro_printer.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_flipdisc_2x7.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_gprof.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ht1632.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ili9325d_320x240.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ks0108_128x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_lc7981_160x80.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_lc7981_240x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_lc7981_240x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_lc7981_320x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ld7032_60x32.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_null.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_pcd8544_84x48.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_pcf8812_96x65.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_sbn1661_122x32.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1306_128x32.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1306_128x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1306_64x48.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1309_128x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1322_nhd31oled_bw.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1322_nhd31oled_gr.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1325_nhd27oled_bw.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1325_nhd27oled_bw_new.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1325_nhd27oled_gr.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1325_nhd27oled_gr_new.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1327_96x96_gr.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1351_128x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_ssd1353_160x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_64128n.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_dogm128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_dogm132.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_lm6059.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_lm6063.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_nhd_c12832.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7565_nhd_c12864.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7687_c144mvgd.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7920_128x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7920_192x32.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_st7920_202x32.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_t6963_128x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_t6963_128x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_t6963_240x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_t6963_240x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_tls8204_84x48.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1601_c128032.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1608_240x128.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1608_240x64.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1610_dogxl160.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1611_dogm240.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1611_dogxl240.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1701_dogs102.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_dev_uc1701_mini12864.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_ellipse.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_font.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_font_data.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_line.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_ll_api.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_page.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb14v1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb16h1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb16h2.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb16v1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb16v2.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb32h1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8h1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8h1f.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8h2.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8h8.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8v1.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pb8v2.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pbxh16.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_pbxh24.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_polygon.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_rect.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_rot.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_scale.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_state.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_u16toa.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_u8toa.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/lib/U8glib/clib/u8g_virtual_screen.c">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/src/CommandReader.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/src/Input.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/src/MemoryFree.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/src/Screen.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/louis/kspcontroller_firmware/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

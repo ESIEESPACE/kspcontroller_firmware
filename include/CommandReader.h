@@ -5,7 +5,6 @@
 #ifndef KSPCONTROLLER_FIRMWARE_COMMANDREADER_H
 #define KSPCONTROLLER_FIRMWARE_COMMANDREADER_H
 
-#include <WString.h>
 #include <Arduino.h>
 #include "MemoryFree.h"
 
